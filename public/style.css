@@ -1,0 +1,14 @@
+form{
+    background-color: aqua;
+    display: block;
+    height: 100vh;
+    
+}
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap : 10px;;
+}
