@@ -7,6 +7,13 @@ const port=3000;
 const _dirname=dirname(fileURLToPath(import.meta.url));
 app.use(express.static("public"));
 app.use(bodyPraser.urlencoded({extended:true}));
+function numb(req,res,next){
+    console.log(req.body);
+    next();
+};
+
+
+app.use(numb);
 app.get("/",(req,res)=>{
     res.sendFile(_dirname+"/public/index.html");
 });
